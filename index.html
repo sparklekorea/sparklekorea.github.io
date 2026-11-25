@@ -29,7 +29,10 @@ header{display:flex;align-items:center;justify-content:space-between;height:68px
 .star{width:64px;height:64px;margin:0 auto 26px;filter:drop-shadow(0 0 18px rgba(231,201,137,.8));animation:spin 14s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.star{animation:none}}
-h1{margin:0;font-size:clamp(40px,7vw,72px);letter-spacing:-1.5px;line-height:1.05;font-weight:800;background:linear-gradient(180deg,#fff 0%,var(--gold2) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{margin:0;font-size:clamp(40px,7vw,76px);letter-spacing:-1.5px;line-height:1.05;font-weight:800;color:#f1d48e;text-shadow:0 0 6px rgba(255,236,190,.55),0 0 18px rgba(231,201,137,.75),0 0 42px rgba(231,201,137,.5),0 0 80px rgba(231,201,137,.3);animation:glow 3.2s ease-in-out infinite}
+@keyframes glow{0%,100%{text-shadow:0 0 6px rgba(255,236,190,.55),0 0 18px rgba(231,201,137,.75),0 0 42px rgba(231,201,137,.5),0 0 80px rgba(231,201,137,.3)}50%{text-shadow:0 0 8px rgba(255,240,200,.7),0 0 24px rgba(231,201,137,.9),0 0 56px rgba(231,201,137,.6),0 0 110px rgba(231,201,137,.38)}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+.brand{color:#f1d48e;text-shadow:0 0 10px rgba(231,201,137,.6)}
 .hero p{margin:18px auto 0;max-width:520px;color:var(--muted);font-size:clamp(15.5px,2vw,18.5px)}
 h2{font-size:13px;letter-spacing:2px;color:var(--gold);font-weight:800;text-align:center;margin:0 0 22px}
 .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:760px;margin:0 auto}
