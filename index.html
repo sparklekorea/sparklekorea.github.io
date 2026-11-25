@@ -29,17 +29,16 @@ header{display:flex;align-items:center;justify-content:space-between;height:68px
 .star{width:64px;height:64px;margin:0 auto 26px;filter:drop-shadow(0 0 18px rgba(231,201,137,.8));animation:spin 14s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.star{animation:none}}
-h1{margin:0;font-size:clamp(40px,7vw,76px);letter-spacing:-1.5px;line-height:1.05;font-weight:800;color:#f1d48e;text-shadow:0 0 6px rgba(255,236,190,.55),0 0 18px rgba(231,201,137,.75),0 0 42px rgba(231,201,137,.5),0 0 80px rgba(231,201,137,.3);animation:glow 3.2s ease-in-out infinite}
-@keyframes glow{0%,100%{text-shadow:0 0 6px rgba(255,236,190,.55),0 0 18px rgba(231,201,137,.75),0 0 42px rgba(231,201,137,.5),0 0 80px rgba(231,201,137,.3)}50%{text-shadow:0 0 8px rgba(255,240,200,.7),0 0 24px rgba(231,201,137,.9),0 0 56px rgba(231,201,137,.6),0 0 110px rgba(231,201,137,.38)}}
-@media (prefers-reduced-motion:reduce){h1{animation:none}}
-.brand{color:#f1d48e;text-shadow:0 0 10px rgba(231,201,137,.6)}
-.hero p{margin:18px auto 0;max-width:520px;color:var(--muted);font-size:clamp(15.5px,2vw,18.5px)}
+h1{margin:0;font-size:clamp(40px,7vw,76px);letter-spacing:-1.5px;line-height:1.05;font-weight:800;background:linear-gradient(180deg,#fff4d8 0%,#f1d48e 45%,#c99c4e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 14px rgba(231,201,137,.35)) drop-shadow(0 2px 2px rgba(0,0,0,.6))}
+.gt{background:linear-gradient(180deg,#fff1cf 0%,#ecc983 55%,#c99c4e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 8px rgba(231,201,137,.28))}
+.brand span{background:linear-gradient(180deg,#fff1cf,#e7c989 60%,#c99c4e);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 6px rgba(231,201,137,.35))}
+.hero p{margin:18px auto 0;max-width:520px;color:#cdbf9f;font-size:clamp(15.5px,2vw,18.5px)}
 h2{font-size:13px;letter-spacing:2px;color:var(--gold);font-weight:800;text-align:center;margin:0 0 22px}
 .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:760px;margin:0 auto}
 .app{display:flex;gap:18px;align-items:center;padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(231,201,137,.06),transparent 60%),var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
 .app:hover{transform:translateY(-3px);border-color:rgba(231,201,137,.5);box-shadow:0 16px 40px rgba(0,0,0,.45),0 0 30px rgba(231,201,137,.12)}
 .app img{width:68px;height:68px;border-radius:17px;flex:none;box-shadow:0 0 24px rgba(231,201,137,.25)}
-.app b{display:block;font-size:19px}
+.app b{display:inline-block;font-size:19px}
 .app span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
 .app em{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-style:normal;font-size:13px;font-weight:700;color:var(--gold)}
 .app em svg{width:14px;height:14px}
@@ -53,7 +52,7 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
 <div class="sky" id="sky"></div>
 <main>
   <header>
-    <div class="brand"><svg viewBox="0 0 24 24"><path d="M12 2l2 7.5L21.5 12 14 14l-2 8-2-8-7.5-2L10 9.5z" fill="#e7c989"/></svg>Sparkle Korea</div>
+    <div class="brand"><svg viewBox="0 0 24 24"><path d="M12 2l2 7.5L21.5 12 14 14l-2 8-2-8-7.5-2L10 9.5z" fill="#e7c989"/></svg><span>Sparkle Korea</span></div>
     <button class="lang" id="lang" type="button">English</button>
   </header>
 
@@ -68,14 +67,14 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
     <a class="app" href="https://calendar.sparklekorea.com/">
       <img src="calendar.png" alt="">
       <div>
-        <b data-t="cal">스파클달력</b>
+        <b class="gt" data-t="cal">스파클달력</b>
         <span data-t="calD">일정과 돈을 한 달력에서. 휴대폰 앱과 윈도우 PC 프로그램.</span>
         <em><span data-t="go">자세히 보기</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h9M8 4l4 4-4 4"/></svg></em>
       </div>
     </a>
     <div class="app soon" aria-hidden="true">
       <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
-      <div><b data-t="next">다음 작품</b><span data-t="nextD">준비하고 있어요.</span></div>
+      <div><b class="gt" data-t="next">다음 작품</b><span data-t="nextD">준비하고 있어요.</span></div>
     </div>
   </div>
 </main>
