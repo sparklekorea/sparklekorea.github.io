@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sparkle Korea</title>
-<meta name="description" content="Sparkle Korea — 일하는 사람을 위한 작고 반짝이는 프로그램을 만듭니다.">
+<meta name="description" content="Sparkle Korea — 일상에 작은 반짝임을 더하는 앱과 게임을 만듭니다.">
 <meta property="og:title" content="Sparkle Korea">
-<meta property="og:description" content="일하는 사람을 위한 작고 반짝이는 프로그램을 만듭니다.">
+<meta property="og:description" content="일상에 작은 반짝임을 더하는 앱과 게임을 만듭니다.">
 <meta name="theme-color" content="#0b0c10">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0c10'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23e7c989'/%3E%3C/svg%3E">
 <style>
@@ -57,10 +57,10 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
   <section class="hero">
     <svg class="star" viewBox="0 0 24 24"><path d="M12 1.5l2.3 8.2 8.2 2.3-8.2 2.3-2.3 8.2-2.3-8.2-8.2-2.3 8.2-2.3z" fill="#e7c989"/></svg>
     <h1>Sparkle Korea</h1>
-    <p data-t="sub">일하는 사람을 위한, 작고 반짝이는 프로그램을 만들어요.</p>
+    <p data-t="sub">일상에 작은 반짝임을 더하는 앱과 게임을 만들어요.</p>
   </section>
 
-  <h2 data-t="apps">OUR APPS</h2>
+  <h2 data-t="apps">APPS &amp; GAMES</h2>
   <div class="apps">
     <a class="app" href="https://calendar.sparklekorea.com/">
       <img src="calendar.png" alt="">
@@ -72,7 +72,7 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
     </a>
     <div class="app soon" aria-hidden="true">
       <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
-      <div><b data-t="next">다음 프로그램</b><span data-t="nextD">준비하고 있어요.</span></div>
+      <div><b data-t="next">다음 작품</b><span data-t="nextD">준비하고 있어요.</span></div>
     </div>
   </div>
 </main>
@@ -91,7 +91,7 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
     sky.appendChild(s);
   }
 })();
-var EN = { sub: 'Small, sparkling apps for people who work.', apps: 'OUR APPS', cal: 'Sparkle Calendar', calD: 'Your schedule and money on one calendar. Phone app and Windows PC app.', go: 'Learn more', next: 'Next app', nextD: 'Coming soon.' };
+var EN = { sub: 'Apps and games that add a little sparkle to your day.', apps: 'APPS &amp; GAMES', cal: 'Sparkle Calendar', calD: 'Your schedule and money on one calendar. Phone app and Windows PC app.', go: 'Learn more', next: 'Next up', nextD: 'Coming soon.' };
 var KO = {};
 document.querySelectorAll('[data-t]').forEach(function (e) { KO[e.getAttribute('data-t')] = e.innerHTML; });
 var lang = (navigator.language || 'ko').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en';
