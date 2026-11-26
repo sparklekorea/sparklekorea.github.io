@@ -74,6 +74,14 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
         <em><span data-t="go">자세히 보기</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h9M8 4l4 4-4 4"/></svg></em>
       </div>
     </a>
+    <a class="app" href="https://macro.sparklekorea.com/">
+      <img src="macro.png" alt="">
+      <div>
+        <b class="gt" data-t="mac">스파클 매크로</b>
+        <span data-t="macD">화면에서 그림을 찾아 대신 눌러 주는 윈도우 자동 클릭 프로그램.</span>
+        <em><span data-t="go">자세히 보기</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h9M8 4l4 4-4 4"/></svg></em>
+      </div>
+    </a>
     <div class="app soon" aria-hidden="true">
       <div class="ph"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
       <div><b class="gt" data-t="next">다음 작품</b><span data-t="nextD">준비하고 있어요.</span></div>
@@ -95,7 +103,7 @@ footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-siz
     sky.appendChild(s);
   }
 })();
-var EN = { sub: 'Apps and games that add a little sparkle to your day.', apps: 'APPS &amp; GAMES', cal: 'Sparkle Calendar', calD: 'Your schedule and money on one calendar. Phone app and Windows PC app.', go: 'Learn more', next: 'Next up', nextD: 'Coming soon.' };
+var EN = { sub: 'Apps and games that add a little sparkle to your day.', apps: 'APPS &amp; GAMES', cal: 'Sparkle Calendar', calD: 'Your schedule and money on one calendar. Phone app and Windows PC app.', mac: 'Sparkle Macro', macD: 'A Windows auto-clicker that finds images on screen and clicks them for you.', go: 'Learn more', next: 'Next up', nextD: 'Coming soon.' };
 var KO = {};
 document.querySelectorAll('[data-t]').forEach(function (e) { KO[e.getAttribute('data-t')] = e.innerHTML; });
 var lang = (navigator.language || 'ko').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en';
