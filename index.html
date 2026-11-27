@@ -263,7 +263,7 @@ footer a:hover{color:var(--gold)}
       <div class="stat"><b class="gt">3</b><p data-t="s1">운영 중인 제품</p><small data-t="s1s">스파클달력 · 매크로 · DMX</small></div>
       <div class="stat"><b class="gt">2</b><p data-t="s2">지원하는 기기</p><small>Android · Windows</small></div>
       <div class="stat"><b class="gt">7</b><p data-t="s3">스파클달력 언어</p><small data-t="s3s">한국어 · 영어 · 일본어 · 중국어 외</small></div>
-      <div class="stat"><b class="gt">1.0.85</b><p data-t="s4">스파클달력 최신 버전</p><small data-t="s4s">2026.11 · PC 자동 업데이트</small></div>
+      <div class="stat"><b class="gt" id="ver">1.0.88</b><p data-t="s4">스파클달력 최신 버전</p><small data-t="s4s">2026.11 · PC 자동 업데이트</small></div>
     </div>
   </section>
 
@@ -364,6 +364,23 @@ document.querySelectorAll('.seg button').forEach(function (b) {
   b.onclick = function () { lang = b.getAttribute('data-l'); try { localStorage.setItem('lang', lang); } catch (e) {} apply(); };
 });
 apply();
+// 최신 PC 버전: GitHub 공개 배포(sparklekorea/calendar-pc)에서 자동으로 읽어 옴. 못 읽으면 위에 적힌 값 그대로
+fetch('https://api.github.com/repos/sparklekorea/calendar-pc/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+  .then(function (r) { return r.ok ? r.json() : null; })
+  .then(function (j) {
+    if (!j || !j.tag_name) return;
+    var v = String(j.tag_name).replace(/^v/, '');
+    if (!/^\d+(\.\d+)+$/.test(v)) return;
+    document.getElementById('ver').textContent = v;
+    var d = new Date(j.published_at || j.created_at);
+    if (!isNaN(d)) {
+      var mm = d.getMonth() + 1;
+      KO.s4s = d.getFullYear() + '.' + (mm < 10 ? '0' : '') + mm + '.' + (d.getDate() < 10 ? '0' : '') + d.getDate() + ' · PC 자동 업데이트';
+      EN.s4s = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear() + ' · PC auto-update';
+      apply();
+    }
+  })
+  .catch(function () {});
 </script>
 </body>
 </html>
