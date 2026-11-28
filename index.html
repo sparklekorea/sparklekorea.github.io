@@ -7,15 +7,23 @@
 <meta name="darkreader-lock">
 <title>Sparkle Korea</title>
 <meta name="description" content="Sparkle Korea — 일상에 작은 반짝임을 더하는 앱과 게임을 만듭니다. 스파클달력 · 스파클 매크로 · 스파클 DMX">
-<meta name="naver-site-verification" content="738cd6062f04b10478c2e9141c0971e431510bce" />
-<link rel="alternate" hreflang="ko" href="https://sparklekorea.com/?lang=ko">
-<link rel="alternate" hreflang="en" href="https://sparklekorea.com/?lang=en">
-<link rel="alternate" hreflang="ja" href="https://sparklekorea.com/?lang=ja">
-<link rel="alternate" hreflang="zh-Hans" href="https://sparklekorea.com/?lang=zh">
-<link rel="alternate" hreflang="es" href="https://sparklekorea.com/?lang=es">
-<link rel="alternate" hreflang="pt" href="https://sparklekorea.com/?lang=pt">
-<link rel="alternate" hreflang="de" href="https://sparklekorea.com/?lang=de">
+<link rel="canonical" href="https://sparklekorea.com/">
+<link rel="alternate" hreflang="ko" href="https://sparklekorea.com/">
+<link rel="alternate" hreflang="en" href="https://sparklekorea.com/en/">
+<link rel="alternate" hreflang="ja" href="https://sparklekorea.com/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sparklekorea.com/zh/">
+<link rel="alternate" hreflang="es" href="https://sparklekorea.com/es/">
+<link rel="alternate" hreflang="pt" href="https://sparklekorea.com/pt/">
+<link rel="alternate" hreflang="de" href="https://sparklekorea.com/de/">
 <link rel="alternate" hreflang="x-default" href="https://sparklekorea.com/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta name="naver-site-verification" content="738cd6062f04b10478c2e9141c0971e431510bce" />
 <meta property="og:title" content="Sparkle Korea">
 <meta property="og:description" content="일상에 작은 반짝임을 더하는 앱과 게임을 만듭니다.">
 <meta property="og:image" content="https://sparklekorea.com/shots/cal_pcw_calendar.webp">
@@ -329,6 +337,8 @@ function skDetect() {
   var q = null;
   try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
   if (skOk(q)) return q;
+  var pl = document.documentElement.getAttribute('data-sk-page');
+  if (skOk(pl)) return pl;
   var m = document.cookie.match(/(?:^|; )sk_lang=([a-z]{2})/);
   if (m && skOk(m[1])) return m[1];
   try { var s = localStorage.getItem('lang'); if (skOk(s)) return s; } catch (e) {}
@@ -346,7 +356,7 @@ function skLinks(l) {
     try {
       var u = new URL(a.getAttribute('href'), location.href);
       if (!/(^|\.)sparklekorea\.com$/.test(u.hostname) || u.hostname === location.hostname) return;
-      u.searchParams.set('lang', l);
+      var p = u.pathname, lp = (p.length === 4 && p.charAt(0) === '/' && p.charAt(3) === '/') ? p.slice(1, 3) : null; if (p === '/' || (lp && skOk(lp))) { u.pathname = l === 'ko' ? '/' : '/' + l + '/'; u.searchParams.delete('lang'); if (l === 'ko') u.searchParams.set('lang', 'ko'); } /* sk-lang-path */ else u.searchParams.set('lang', l);
       a.href = u.toString();
     } catch (e) {}
   });
@@ -354,7 +364,7 @@ function skLinks(l) {
 // <select id="lang" class="lang"> 를 7개 언어로 채우고, 바꾸면 onChange(언어) 를 부름
 function skPicker(sel, cur, onChange) {
   sel.innerHTML = SK_LANGS.map(function (l) { return '<option value="' + l[0] + '"' + (l[0] === cur ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('');
-  sel.onchange = function () { skSave(sel.value); onChange(sel.value); };
+  sel.onchange = function () { skSave(sel.value); var pg = document.documentElement.getAttribute('data-sk-page'); if (pg) { try { history.replaceState(null, '', sel.value === 'ko' ? '../' : '../' + sel.value + '/'); document.documentElement.setAttribute('data-sk-page', sel.value === 'ko' ? '' : sel.value); } catch (e) {} } /* sk-lang-url */ onChange(sel.value); };
 }
 // ===== 공통 언어 처리 끝 =====
 // 반짝이는 별

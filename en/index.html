@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-sk-page="en">
+<head>
+<!-- 자동 생성: tools/site-lang/make-lang-pages.cjs (한국어 index.html 에서 만듦. 이 파일을 직접 고치지 마세요) -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<title>Sparkle Korea</title>
+<meta name="description" content="Sparkle Korea makes apps and games that add a little sparkle to everyday life: Sparkle Calendar, Sparkle Macro and SparkleDMX.">
+<link rel="canonical" href="https://sparklekorea.com/en/">
+<link rel="alternate" hreflang="ko" href="https://sparklekorea.com/">
+<link rel="alternate" hreflang="en" href="https://sparklekorea.com/en/">
+<link rel="alternate" hreflang="ja" href="https://sparklekorea.com/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sparklekorea.com/zh/">
+<link rel="alternate" hreflang="es" href="https://sparklekorea.com/es/">
+<link rel="alternate" hreflang="pt" href="https://sparklekorea.com/pt/">
+<link rel="alternate" hreflang="de" href="https://sparklekorea.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://sparklekorea.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta name="naver-site-verification" content="738cd6062f04b10478c2e9141c0971e431510bce" />
+<meta property="og:url" content="https://sparklekorea.com/en/">
+<meta property="og:title" content="Sparkle Korea">
+<meta property="og:description" content="Apps and games that add a little sparkle to everyday life.">
+<meta property="og:image" content="https://sparklekorea.com/shots/cal_pcw_calendar.webp">
+<meta name="theme-color" content="#0b0c10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0c10'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23e7c989'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#0b0c10;--card:#13141b;--card2:#181a22;--line:rgba(231,201,137,.24);--line2:rgba(255,255,255,.08);--gold:#e7c989;--gold2:#f6e2b0;--text:#f2eee6;--muted:#a49e94;--dim:#7d776e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:.86em;color:var(--dim)}
+.gt{background:linear-gradient(180deg,#fff1cf 0%,#ecc983 55%,#c99c4e 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* 밤하늘 */
+.sky{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(70% 55% at 50% 0%,rgba(231,201,137,.13),transparent 70%),radial-gradient(60% 50% at 100% 100%,rgba(90,100,200,.10),transparent 70%)}
+.sky i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:0;animation:tw 4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:0}50%{opacity:.8}}
+.wrap{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* 떠 있는 메뉴 */
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:4px;padding:6px 6px 6px 16px;border:1px solid var(--line2);border-radius:999px;background:rgba(14,15,20,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:calc(100% - 24px)}
+.nav .brand{display:flex;align-items:center;gap:8px;font-weight:800;margin-right:8px;white-space:nowrap}
+.nav .brand svg{width:18px;height:18px;filter:drop-shadow(0 0 5px rgba(231,201,137,.7))}
+.nav .links a{font-size:13.5px;color:#cfc8bc;padding:7px 11px;border-radius:999px;white-space:nowrap}
+.nav .links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.seg{display:flex;border:1px solid var(--line2);border-radius:999px;padding:2px;margin:0 4px}
+.seg button{border:0;background:none;color:var(--muted);font:inherit;font-size:12px;font-weight:700;padding:4px 9px;border-radius:999px;cursor:pointer}
+.seg button.on{background:#f2eee6;color:#111}
+select.lang{display:block;-webkit-appearance:none;appearance:none;background:transparent;color:inherit;font:inherit;font-size:12px;font-weight:700;padding:5px 12px;border:1px solid var(--line2);border-radius:999px;cursor:pointer;outline:none;max-width:110px}
+select.lang:hover,select.lang:focus{border-color:var(--line)}
+select.lang option{background:var(--bg);color:var(--text)}
+.cta{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13.5px;color:#1a1408;background:linear-gradient(180deg,#f6e2b0,#e2b866);padding:8px 8px 8px 15px;border-radius:999px;white-space:nowrap;box-shadow:0 0 18px rgba(231,201,137,.3)}
+.cta .ar{width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center}
+.cta svg,.btn svg,.go svg{width:12px;height:12px}
+
+/* 첫 화면 */
+.hero{padding:130px 0 40px;text-align:center}
+.hero .star{display:block;width:64px;height:64px;margin:0 auto 26px;filter:drop-shadow(0 0 18px rgba(231,201,137,.8));animation:spin 14s linear infinite}
+.hero .lead,.hero .sub{margin-left:auto;margin-right:auto}
+.hero .btns,.hero .facts{justify-content:center}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#d8cdb6;border:1px solid var(--line);border-radius:999px;padding:5px 13px;background:rgba(231,201,137,.05)}
+.chip svg{width:12px;height:12px;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero h1{margin:0;font-size:clamp(46px,8.4vw,96px);letter-spacing:-2px;line-height:1;font-weight:800;background:linear-gradient(180deg,#fff4d8 0%,#f1d48e 45%,#c99c4e 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(231,201,137,.3)) drop-shadow(0 2px 2px rgba(0,0,0,.6))}
+.hero .lead{margin:26px auto 0;font-size:clamp(20px,2.7vw,28px);font-weight:700;line-height:1.4;max-width:640px}
+.hero .sub{margin:14px auto 0;color:var(--muted);font-size:clamp(15px,1.7vw,17px);max-width:600px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;padding:12px 12px 12px 20px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.03)}
+.btn.pri{color:#1a1408;border:0;background:linear-gradient(180deg,#f6e2b0,#e2b866);box-shadow:0 0 24px rgba(231,201,137,.3)}
+.btn .ar{width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.14);display:flex;align-items:center;justify-content:center}
+.btn:not(.pri){padding-right:20px}
+.btn:hover{transform:translateY(-1px)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:28px 0 0;padding:0;list-style:none;color:#c9c2b6;font-size:14px}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts li:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+
+/* 앱 화면 띠 */
+.reel{position:relative;z-index:1;margin:40px 0 10px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.reel .row{display:flex;gap:16px;width:max-content;animation:slide 70s linear infinite;margin-bottom:16px}
+.reel .row.r2{animation-direction:reverse;animation-duration:85s}
+.reel img{height:210px;width:auto;border-radius:14px;border:1px solid var(--line2);box-shadow:0 14px 34px rgba(0,0,0,.5);background:#111}
+.reel:hover .row{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* 섹션 제목 */
+section.blk{padding:90px 0 0}
+.eyebrow{font-size:12.5px;letter-spacing:2px;color:var(--gold);font-weight:800}
+.blk h2{margin:10px 0 0;font-size:clamp(28px,4vw,42px);letter-spacing:-.8px;line-height:1.2}
+.blk .desc{margin:12px 0 0;color:var(--muted);max-width:620px}
+.count{display:flex;align-items:baseline;gap:8px;margin:34px 0 14px;font-weight:800;font-size:14px}
+.count span{color:var(--dim);font-weight:600}
+
+/* 제품 카드 */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{position:relative;display:flex;flex-direction:column;border:1px solid var(--line2);border-radius:24px;background:linear-gradient(180deg,rgba(231,201,137,.05),transparent 40%),var(--card);overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(231,201,137,.45);box-shadow:0 20px 50px rgba(0,0,0,.5),0 0 34px rgba(231,201,137,.1)}
+.shot{position:relative;margin:10px 10px 0;border-radius:16px;overflow:hidden;background:radial-gradient(80% 90% at 50% 0%,rgba(231,201,137,.16),transparent 70%),#0e0f14;aspect-ratio:16/10}
+.shot img{position:absolute}
+.badge{position:absolute;top:12px;right:12px;z-index:3;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;background:rgba(10,10,14,.78);border:1px solid var(--line2);backdrop-filter:blur(6px)}
+.badge:before{content:"";width:6px;height:6px;border-radius:50%;background:#f1b84a;box-shadow:0 0 8px #f1b84a}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.title{display:flex;align-items:center;gap:12px}
+.title img{width:40px;height:40px;border-radius:11px;box-shadow:0 0 16px rgba(231,201,137,.22)}
+.title b{font-size:24px;letter-spacing:-.4px;line-height:1.2}
+.body p{margin:12px 0 0;color:#d6cfc3}
+.meta{margin-top:6px;font-size:13.5px;color:var(--dim)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tags span{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:#e9d7ad;background:rgba(231,201,137,.06)}
+.go{position:absolute;right:18px;bottom:20px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;color:#ddd}
+.card:hover .go{background:var(--gold);color:#1a1408;border-color:var(--gold)}
+/* 대표 카드: 스파클달력 */
+.feat{grid-column:1/-1;display:grid;grid-template-columns:1.35fr 1fr}
+.feat .shot{aspect-ratio:auto;min-height:360px;margin:10px 0 10px 10px}
+.feat .shot .pc{left:5%;top:9%;width:86%;border-radius:10px;border:1px solid var(--line2);box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.feat .shot .ph{right:4%;bottom:-14%;width:24%;border-radius:16px;border:1px solid rgba(255,255,255,.14);box-shadow:0 20px 40px rgba(0,0,0,.7)}
+.feat .shot .wd{left:2%;bottom:5%;width:20%;border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.6)}
+.feat .body{padding:30px 30px 30px 28px;justify-content:center}
+.feat .title b{font-size:32px}
+.feat .title img{width:52px;height:52px;border-radius:14px}
+.std .shot img{left:50%;top:10%;transform:translateX(-50%);width:84%;border-radius:10px;border:1px solid var(--line2);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.std.tall .shot img{width:52%;top:8%}
+.soon{grid-column:1/-1;flex-direction:row;gap:16px;border-style:dashed;border-color:var(--line);background:transparent;align-items:center;justify-content:center;padding:26px;opacity:.75;pointer-events:none}
+.soon .plus{width:50px;height:50px;border-radius:14px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;flex:none}
+.soon div+b{margin-right:4px}
+.soon .plus svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.6}
+.soon b{font-size:20px}
+.soon span{color:var(--muted);font-size:14px}
+
+/* 숫자 */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:34px}
+.stat{border:1px solid var(--line2);border-radius:20px;padding:22px;background:var(--card)}
+.stat b{display:block;font-size:clamp(34px,4.4vw,48px);letter-spacing:-1px;line-height:1.1}
+.stat p{margin:8px 0 0;font-size:14.5px;color:#d6cfc3}
+.stat small{display:block;margin-top:8px;font-size:12.5px;color:var(--dim)}
+
+/* 소식 */
+.news{margin-top:30px;border-top:1px solid var(--line2)}
+.news a{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:18px 4px;border-bottom:1px solid var(--line2)}
+.news a:hover{background:rgba(255,255,255,.02)}
+.news time{color:var(--dim);font-size:13.5px}
+.news b{font-size:16px}
+.news em{font-style:normal;font-size:12.5px;color:#e9d7ad;border:1px solid var(--line);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.news span{display:block;color:var(--muted);font-size:14px;margin-top:2px}
+
+/* 문의 */
+.contact{margin-top:30px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+.box{border:1px solid var(--line2);border-radius:24px;padding:28px;background:var(--card)}
+.box h3{margin:0;font-size:20px}
+.box p{margin:10px 0 0;color:var(--muted)}
+.steps{margin:0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:10px;padding:10px 0}
+.steps li:before{content:counter(s);width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--gold);font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:14px}
+
+footer{position:relative;z-index:1;margin-top:110px;border-top:1px solid var(--line2)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;padding-top:34px;padding-bottom:44px;font-size:13.5px;color:var(--muted)}
+footer .col{display:flex;flex-direction:column;gap:6px}
+footer .col b{color:var(--text);font-size:13px;margin-bottom:2px}
+footer a:hover{color:var(--gold)}
+
+@media (max-width:860px){
+  .feat{grid-template-columns:1fr}
+  .feat .shot{min-height:0;aspect-ratio:16/11;margin:10px 10px 0}
+  .feat .body{padding:22px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact{grid-template-columns:1fr}
+  .nav .links{display:none}
+}
+@media (max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .hero{padding-top:120px}
+  .reel img{height:150px}
+  .news a{grid-template-columns:1fr auto}
+  .news time{grid-column:1/-1}
+  .nav{padding-left:12px}
+  .nav .brand span{display:none}
+  .feat .title b{font-size:27px}
+}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div>
+
+<nav class="nav">
+  <a class="brand" href="#top"><svg viewBox="0 0 24 24"><path d="M12 2l2 7.5L21.5 12 14 14l-2 8-2-8-7.5-2L10 9.5z" fill="#e7c989"/></svg><span class="gt">Sparkle Korea</span></a>
+  <div class="links"><a href="#products" data-t="nProd">제품</a><a href="#news" data-t="nNews">소식</a><a href="#contact" data-t="nContact">문의</a></div>
+  <select id="lang" class="seg lang" aria-label="Language"></select>
+  <a class="cta" href="https://calendar.sparklekorea.com/"><span data-t="cta">스파클달력 받기</span><span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 11l6-6M6 5h5v5"/></svg></span></a>
+</nav>
+
+<div class="wrap" id="top">
+  <section class="hero">
+    <svg class="star" viewBox="0 0 24 24"><path d="M12 1.5l2.3 8.2 8.2 2.3-8.2 2.3-2.3 8.2-2.3-8.2-8.2-2.3 8.2-2.3z" fill="#e7c989"/></svg>
+    <h1>Sparkle Korea</h1>
+    <p class="lead" data-t="lead">일상에 작은 반짝임을 더하는<br>앱과 게임을 만들어요.</p>
+    <p class="sub" data-t="sub">일하면서 불편했던 것들을 직접 쓸 수 있는 프로그램으로 만듭니다. 휴대폰과 PC에서, 기획부터 운영까지 혼자 맡고 있어요.</p>
+    <div class="btns">
+      <a class="btn pri" href="#products"><span data-t="b1">제품 보기</span><span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 3v10M4 9l4 4 4-4"/></svg></span></a>
+      <a class="btn" href="#contact" data-t="b2">문의하기</a>
+    </div>
+    <ul class="facts">
+      <li data-t="f1">앱 3개 운영 중</li>
+      <li data-t="f2">Android · Windows PC</li>
+      <li data-t="f3">스파클달력 7개 언어</li>
+    </ul>
+  </section>
+</div>
+
+<div class="reel" aria-hidden="true">
+  <div class="row" id="r1"></div>
+  <div class="row r2" id="r2"></div>
+</div>
+
+<div class="wrap">
+  <section class="blk" id="products">
+    <div class="eyebrow">APPS &amp; GAMES</div>
+    <h2 data-t="pH">제품</h2>
+    <p class="desc" data-t="pD">모두 직접 기획하고 만들어 운영하는 프로그램이에요. 이름을 누르면 각 제품 홈페이지로 이동해요.</p>
+    <div class="count"><span data-t="pC">운영 중인 제품</span> 3</div>
+
+    <div class="grid">
+      <a class="card feat" href="https://calendar.sparklekorea.com/">
+        <div class="shot">
+          <span class="badge" data-t="live">운영 중</span>
+          <img class="pc" src="../shots/cal_pcw_calendar.webp" alt="" loading="lazy">
+          <img class="wd" src="../shots/cal_widget.webp" alt="" loading="lazy">
+          <img class="ph" src="../shots/cal_m_main.webp" alt="" loading="lazy">
+        </div>
+        <div class="body">
+          <div class="title"><img src="../calendar.png" alt=""><b class="gt" data-t="cal">스파클달력</b></div>
+          <div class="mono">calendar.sparklekorea.com</div>
+          <p data-t="calD">일정과 돈을 한 달력에서. 출퇴근 기록, 입금 정리, 함께 쓰는 대화방까지 휴대폰과 PC가 똑같이 맞춰져요.</p>
+          <div class="meta">Android · Windows PC</div>
+          <div class="tags"><span data-t="calT1">휴대폰 · PC 자동 동기화</span><span data-t="calT2">7개 언어</span><span data-t="calT3">바탕화면 위젯</span></div>
+          <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 11l6-6M6 5h5v5"/></svg></span>
+        </div>
+      </a>
+
+      <a class="card std tall" href="https://macro.sparklekorea.com/">
+        <div class="shot"><img src="../shots/macro_main.webp" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="title"><img src="../macro.png" alt=""><b class="gt" data-t="mac">스파클 매크로</b></div>
+          <div class="mono">macro.sparklekorea.com</div>
+          <p data-t="macD">화면에서 그림을 찾아 대신 눌러 주는 윈도우 자동 클릭 프로그램.</p>
+          <div class="meta">Windows PC</div>
+          <div class="tags"><span data-t="macT1">그림 찾아 클릭</span><span data-t="macT2">예약 실행</span></div>
+          <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 11l6-6M6 5h5v5"/></svg></span>
+        </div>
+      </a>
+
+      <a class="card std" href="https://dmx.sparklekorea.com/">
+        <div class="shot"><img src="../shots/dmx_main.webp" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="title"><img src="../dmx.png" alt=""><b class="gt" data-t="dmx">스파클 DMX</b></div>
+          <div class="mono">dmx.sparklekorea.com</div>
+          <p data-t="dmxD">PC로 하는 DMX 조명 컨트롤. 장면·컬러 맵핑·음악 쇼 자동 셋팅까지, 인터넷 없이.</p>
+          <div class="meta">Windows PC</div>
+          <div class="tags"><span data-t="dmxT1">음악 쇼 자동</span><span data-t="dmxT2">인터넷 없이</span></div>
+          <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 11l6-6M6 5h5v5"/></svg></span>
+        </div>
+      </a>
+
+      <div class="card soon" aria-hidden="true">
+        <div class="plus"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+        <b class="gt" data-t="next">다음 작품</b><span data-t="nextD">준비하고 있어요.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="eyebrow">AT A GLANCE</div>
+    <h2 data-t="sH">한눈에 보기</h2>
+    <div class="stats">
+      <div class="stat"><b class="gt">3</b><p data-t="s1">운영 중인 제품</p><small data-t="s1s">스파클달력 · 매크로 · DMX</small></div>
+      <div class="stat"><b class="gt">2</b><p data-t="s2">지원하는 기기</p><small>Android · Windows</small></div>
+      <div class="stat"><b class="gt">7</b><p data-t="s3">스파클달력 언어</p><small data-t="s3s">한국어 · 영어 · 일본어 · 중국어 외</small></div>
+      <div class="stat"><b class="gt" id="ver">1.0.88</b><p data-t="s4">스파클달력 최신 버전</p><small data-t="s4s">2026.11 · PC 자동 업데이트</small></div>
+    </div>
+  </section>
+
+  <section class="blk" id="news">
+    <div class="eyebrow">NEWS</div>
+    <h2 data-t="nH">새 소식</h2>
+    <div class="news">
+      <a href="https://calendar.sparklekorea.com/"><time>2026.11.27</time><div><b data-t="n1">스파클달력 — 채팅 링크 미리보기</b><span data-t="n1d">대화방 주소를 누르면 바로 열리고, 카드로 미리보기가 붙어요.</span></div><em data-t="tCal">스파클달력</em></a>
+      <a href="https://calendar.sparklekorea.com/"><time>2026.11.26</time><div><b data-t="n2">PC 달력에 날씨가 들어왔어요</b><span data-t="n2d">지금 기온과 날짜 칸, 바탕화면 위젯에 날씨 아이콘이 나와요.</span></div><em data-t="tCal">스파클달력</em></a>
+      <a href="https://calendar.sparklekorea.com/"><time>2026.11.25</time><div><b data-t="n3">PC 프로그램 자동 업데이트</b><span data-t="n3d">새 버전을 스스로 받아 두었다가 종료할 때 설치해요.</span></div><em data-t="tCal">스파클달력</em></a>
+    </div>
+  </section>
+
+  <section class="blk" id="contact">
+    <div class="eyebrow">CONTACT</div>
+    <h2 data-t="cH">문의</h2>
+    <p class="desc" data-t="cD">사용하다 불편한 점, 있었으면 하는 기능, 제휴 제안 모두 편하게 보내 주세요.</p>
+    <div class="contact">
+      <div class="box">
+        <h3 data-t="c1">메일로 보내기</h3>
+        <p data-t="c1d">어떤 제품인지와 사용하는 기기(휴대폰 · PC)를 함께 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+        <div class="btns"><a class="btn pri" href="mailto:contact@sparklekorea.com?subject=%5BSparkle%20Korea%5D%20"><span>contact@sparklekorea.com</span><span class="ar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 11l6-6M6 5h5v5"/></svg></span></a></div>
+      </div>
+      <div class="box">
+        <ol class="steps">
+          <li><div><b data-t="st1">보내 주세요</b><span data-t="st1d">불편한 점이나 원하는 기능을 메일로</span></div></li>
+          <li><div><b data-t="st2">확인하고 답장</b><span data-t="st2d">내용을 읽고 가능한 방법을 알려 드려요</span></div></li>
+          <li><div><b data-t="st3">업데이트로 반영</b><span data-t="st3d">고친 내용은 앱 안 업데이트 내역에 남겨요</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="col"><b class="gt" style="font-size:16px">Sparkle Korea</b><span data-t="fT">일상에 작은 반짝임을.</span><span>© 2026 Sparkle Korea</span></div>
+    <div class="col"><b data-t="fP">제품</b><a href="https://calendar.sparklekorea.com/" data-t="cal">스파클달력</a><a href="https://macro.sparklekorea.com/" data-t="mac">스파클 매크로</a><a href="https://dmx.sparklekorea.com/" data-t="dmx">스파클 DMX</a></div>
+    <div class="col"><b data-t="fD">스파클달력 문서</b><a href="https://calendar.sparklekorea.com/guide.html" data-t="fG">사용 설명서</a><a href="https://calendar.sparklekorea.com/privacy.html" data-t="fPr">개인정보 처리방침</a><a href="https://calendar.sparklekorea.com/terms.html" data-t="fTe">이용약관</a></div>
+  </div>
+</footer>
+
+<script>
+// ===== 스파클코리아 공통 언어 처리 (sparklekorea.com · calendar · macro · dmx 모두 같은 코드) =====
+// 고른 언어를 sparklekorea.com 전체가 함께 기억합니다 (쿠키 domain=.sparklekorea.com).
+// 다른 스파클코리아 사이트로 가는 링크에는 ?lang= 을 붙여서, 사이트를 옮겨도 언어가 그대로입니다.
+// 처음 오면 브라우저 언어 → 지원 안 하는 언어면 영어.
+var SK_LANGS = [['ko', '한국어'], ['en', 'English'], ['ja', '日本語'], ['zh', '中文'], ['es', 'Español'], ['pt', 'Português'], ['de', 'Deutsch']];
+function skOk(x) { return SK_LANGS.some(function (l) { return l[0] === x; }); }
+function skDetect() {
+  var q = null;
+  try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+  if (skOk(q)) return q;
+  var pl = document.documentElement.getAttribute('data-sk-page');
+  if (skOk(pl)) return pl;
+  var m = document.cookie.match(/(?:^|; )sk_lang=([a-z]{2})/);
+  if (m && skOk(m[1])) return m[1];
+  try { var s = localStorage.getItem('lang'); if (skOk(s)) return s; } catch (e) {}
+  var n = String(navigator.language || 'en').slice(0, 2).toLowerCase();
+  return skOk(n) ? n : 'en';
+}
+function skSave(l) {
+  var dom = /(^|\.)sparklekorea\.com$/.test(location.hostname) ? '; domain=.sparklekorea.com' : '';
+  document.cookie = 'sk_lang=' + l + dom + '; path=/; max-age=31536000; SameSite=Lax';
+  try { localStorage.setItem('lang', l); } catch (e) {}
+}
+// 스파클코리아 사이트끼리 가는 링크에 지금 언어를 붙임 (?lang=xx)
+function skLinks(l) {
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    try {
+      var u = new URL(a.getAttribute('href'), location.href);
+      if (!/(^|\.)sparklekorea\.com$/.test(u.hostname) || u.hostname === location.hostname) return;
+      var p = u.pathname, lp = (p.length === 4 && p.charAt(0) === '/' && p.charAt(3) === '/') ? p.slice(1, 3) : null; if (p === '/' || (lp && skOk(lp))) { u.pathname = l === 'ko' ? '/' : '/' + l + '/'; u.searchParams.delete('lang'); if (l === 'ko') u.searchParams.set('lang', 'ko'); } /* sk-lang-path */ else u.searchParams.set('lang', l);
+      a.href = u.toString();
+    } catch (e) {}
+  });
+}
+// <select id="lang" class="lang"> 를 7개 언어로 채우고, 바꾸면 onChange(언어) 를 부름
+function skPicker(sel, cur, onChange) {
+  sel.innerHTML = SK_LANGS.map(function (l) { return '<option value="' + l[0] + '"' + (l[0] === cur ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('');
+  sel.onchange = function () { skSave(sel.value); var pg = document.documentElement.getAttribute('data-sk-page'); if (pg) { try { history.replaceState(null, '', sel.value === 'ko' ? '../' : '../' + sel.value + '/'); document.documentElement.setAttribute('data-sk-page', sel.value === 'ko' ? '' : sel.value); } catch (e) {} } /* sk-lang-url */ onChange(sel.value); };
+}
+// ===== 공통 언어 처리 끝 =====
+// 반짝이는 별
+(function () {
+  var sky = document.getElementById('sky');
+  for (var i = 0; i < 70; i++) {
+    var s = document.createElement('i');
+    s.style.left = Math.random() * 100 + '%';
+    s.style.top = Math.random() * 100 + '%';
+    s.style.animationDelay = (Math.random() * 4).toFixed(2) + 's';
+    s.style.animationDuration = (3 + Math.random() * 4).toFixed(2) + 's';
+    if (Math.random() < 0.3) { s.style.width = s.style.height = '3px'; s.style.background = '#f6e2b0'; }
+    sky.appendChild(s);
+  }
+})();
+// 앱 화면 띠 (두 줄, 끊김 없이 돌도록 두 번 넣음)
+(function () {
+  var a = ['cal_pcw_calendar', 'macro_main', 'cal_m_main', 'dmx_music', 'cal_m_chat', 'cal_pcw_ledger', 'macro_schedule'];
+  var b = ['dmx_main', 'cal_m_clients', 'macro_watch', 'cal_widget', 'dmx_auto', 'cal_pcw_calendar', 'dmx_patch'];
+  function fill(id, list) {
+    var row = document.getElementById(id), html = '';
+    list.concat(list).forEach(function (n) { html += '<img src="../shots/' + n + '.webp" alt="" decoding="async">'; });
+    row.innerHTML = html;
+  }
+  fill('r1', a); fill('r2', b);
+})();
+var EN = {
+  nProd: 'Products', nNews: 'News', nContact: 'Contact', cta: 'Get Sparkle Calendar',
+  chip: 'A one-person app studio from Korea',
+  lead: 'Apps and games that add<br>a little sparkle to your day.',
+  sub: 'I turn everyday annoyances from work into tools you can actually use — on your phone and PC, from planning to running them.',
+  b1: 'See products', b2: 'Contact', f1: '3 apps live', f2: 'Android · Windows PC', f3: 'Sparkle Calendar in 7 languages',
+  pH: 'Products', pD: 'Every app is planned, built and run by me. Tap one to visit its homepage.', pC: 'Live products', live: 'Live',
+  cal: 'Sparkle Calendar', calD: 'Your schedule and money on one calendar — clock-in records, payments and shared chats, kept in sync between phone and PC.',
+  calT1: 'Phone · PC sync', calT2: '7 languages', calT3: 'Desktop widget',
+  mac: 'Sparkle Macro', macD: 'A Windows auto-clicker that finds images on screen and clicks them for you.', macT1: 'Find & click images', macT2: 'Scheduled runs',
+  dmx: 'Sparkle DMX', dmxD: 'DMX lighting control on your PC — scenes, color mapping and auto music shows, no internet needed.', dmxT1: 'Auto music shows', dmxT2: 'Works offline',
+  next: 'Next up', nextD: 'Coming soon.',
+  sH: 'At a glance', s1: 'Live products', s1s: 'Calendar · Macro · DMX', s2: 'Supported devices', s3: 'Calendar languages', s3s: 'Korean, English, Japanese, Chinese and more', s4: 'Latest Calendar version', s4s: 'Nov 2026 · PC auto-update',
+  nH: 'News', n1: 'Sparkle Calendar — chat link previews', n1d: 'Links in chats open with a tap and show a preview card.', n2: 'Weather on the PC calendar', n2d: 'Current temperature, plus weather icons in date cells and the desktop widget.', n3: 'PC auto-update', n3d: 'The PC app downloads new versions and installs them when you quit.', tCal: 'Calendar',
+  cH: 'Contact', cD: 'Something not working, a feature you want, or a partnership idea — just send it over.',
+  c1: 'Send an email', c1d: 'Tell me which app and which device (phone or PC) and I can help faster.',
+  st1: 'Send it', st1d: 'Problems or feature ideas by email', st2: 'I read and reply', st2d: 'With what can be done', st3: 'Shipped in an update', st3d: 'Fixes are listed in the in-app update notes',
+  fT: 'A little sparkle for every day.', fP: 'Products', fD: 'Calendar docs', fG: 'User guide', fPr: 'Privacy policy', fTe: 'Terms of use'
+};
+var JA = {
+  nProd: '製品', nNews: 'ニュース', nContact: 'お問い合わせ', cta: 'Sparkle Calendar を入手',
+  chip: '韓国のひとりアプリスタジオ',
+  lead: '毎日に小さなきらめきを添える<br>アプリとゲームを作っています。',
+  sub: '仕事で感じた不便を、実際に使えるツールに。スマホと PC で、企画から運営までひとりで担当しています。',
+  b1: '製品を見る', b2: 'お問い合わせ', f1: '3つのアプリを運営中', f2: 'Android · Windows PC', f3: 'Sparkle Calendar は7言語対応',
+  pH: '製品', pD: 'すべて自分で企画・開発・運営しているアプリです。タップすると各製品のホームページへ移動します。', pC: '運営中の製品', live: '運営中',
+  cal: 'Sparkle Calendar', calD: '予定とお金をひとつのカレンダーで。出退勤の記録、入金の整理、みんなで使うチャットまで、スマホと PC がぴったり同期します。',
+  calT1: 'スマホ · PC 自動同期', calT2: '7言語', calT3: 'デスクトップウィジェット',
+  mac: 'Sparkle Macro', macD: '画面上の画像を見つけて代わりにクリックしてくれる Windows 用自動クリックツール。', macT1: '画像を探してクリック', macT2: '予約実行',
+  dmx: 'Sparkle DMX', dmxD: 'PC で操作する DMX 照明コントロール。シーン、カラーマッピング、音楽ショーの自動設定まで、ネット不要。', dmxT1: '音楽ショー自動', dmxT2: 'オフラインで動作',
+  next: '次の作品', nextD: '準備中です。',
+  sH: 'ひと目でわかる', s1: '運営中の製品', s1s: 'Calendar · Macro · DMX', s2: '対応デバイス', s3: 'Calendar の対応言語', s3s: '韓国語・英語・日本語・中国語ほか', s4: 'Calendar 最新バージョン', s4s: '2026年11月 · PC 自動アップデート',
+  nH: 'ニュース', n1: 'Sparkle Calendar — チャットのリンクプレビュー', n1d: 'チャット内のリンクはタップですぐ開き、プレビューカードが表示されます。', n2: 'PC カレンダーに天気が登場', n2d: '現在の気温に加え、日付欄とデスクトップウィジェットに天気アイコンが表示されます。', n3: 'PC アプリの自動アップデート', n3d: '新しいバージョンを自動でダウンロードし、終了時にインストールします。', tCal: 'Calendar',
+  cH: 'お問い合わせ', cD: '使いにくい点、欲しい機能、提携のご提案など、お気軽にお送りください。',
+  c1: 'メールで送る', c1d: 'どの製品か、使っているデバイス(スマホ · PC)を書いていただくと、より早くお手伝いできます。',
+  st1: '送ってください', st1d: '不便な点や欲しい機能をメールで', st2: '確認して返信', st2d: '内容を読んで、できる方法をお知らせします', st3: 'アップデートで反映', st3d: '修正内容はアプリ内の更新履歴に残します',
+  fT: '毎日に小さなきらめきを。', fP: '製品', fD: 'Calendar ドキュメント', fG: '使い方ガイド', fPr: 'プライバシーポリシー', fTe: '利用規約'
+};
+var ZH = {
+  nProd: '产品', nNews: '动态', nContact: '联系', cta: '获取 Sparkle Calendar',
+  chip: '来自韩国的个人应用工作室',
+  lead: '为日常添一点闪光的<br>应用和游戏。',
+  sub: '把工作中遇到的不便，做成真正好用的工具。手机和 PC 上都能用，从策划到运营都由我一人负责。',
+  b1: '查看产品', b2: '联系我们', f1: '3 款应用运营中', f2: 'Android · Windows PC', f3: 'Sparkle Calendar 支持 7 种语言',
+  pH: '产品', pD: '每款应用都由我亲自策划、开发和运营。点击即可进入各产品主页。', pC: '运营中的产品', live: '运营中',
+  cal: 'Sparkle Calendar', calD: '日程和收支都在一个日历里。上下班记录、收款整理、共享聊天，手机和 PC 实时同步。',
+  calT1: '手机 · PC 自动同步', calT2: '7 种语言', calT3: '桌面小组件',
+  mac: 'Sparkle Macro', macD: '在屏幕上找到图片并替你点击的 Windows 自动点击工具。', macT1: '识图点击', macT2: '定时运行',
+  dmx: 'Sparkle DMX', dmxD: '在 PC 上控制 DMX 灯光。场景、颜色映射、音乐灯光秀自动设置，无需联网。', dmxT1: '音乐灯光秀自动', dmxT2: '离线可用',
+  next: '下一款作品', nextD: '正在准备中。',
+  sH: '一览', s1: '运营中的产品', s1s: 'Calendar · Macro · DMX', s2: '支持的设备', s3: 'Calendar 支持语言', s3s: '韩语、英语、日语、中文等', s4: 'Calendar 最新版本', s4s: '2026年11月 · PC 自动更新',
+  nH: '最新动态', n1: 'Sparkle Calendar — 聊天链接预览', n1d: '聊天中的链接一点即开，并显示预览卡片。', n2: 'PC 日历加入天气', n2d: '显示当前气温，日期格和桌面小组件中也有天气图标。', n3: 'PC 程序自动更新', n3d: '自动下载新版本，并在退出时安装。', tCal: 'Calendar',
+  cH: '联系', cD: '使用中的不便、想要的功能、合作提议，都欢迎随时发来。',
+  c1: '发送邮件', c1d: '请注明是哪款产品以及使用的设备（手机 · PC），这样我能更快帮到你。',
+  st1: '发给我', st1d: '通过邮件告诉我问题或想要的功能', st2: '查看并回复', st2d: '阅读内容后告诉你可行的办法', st3: '通过更新解决', st3d: '修改内容会记录在应用内的更新日志中',
+  fT: '为每一天添一点闪光。', fP: '产品', fD: 'Calendar 文档', fG: '使用指南', fPr: '隐私政策', fTe: '使用条款'
+};
+var ES = {
+  nProd: 'Productos', nNews: 'Novedades', nContact: 'Contacto', cta: 'Obtener Sparkle Calendar',
+  chip: 'Un estudio de apps unipersonal de Corea',
+  lead: 'Apps y juegos que añaden<br>un poco de brillo a tu día.',
+  sub: 'Convierto las molestias del trabajo en herramientas útiles de verdad, en el móvil y en el PC, desde la idea hasta el mantenimiento.',
+  b1: 'Ver productos', b2: 'Contacto', f1: '3 apps activas', f2: 'Android · Windows PC', f3: 'Sparkle Calendar en 7 idiomas',
+  pH: 'Productos', pD: 'Cada app la diseño, la creo y la mantengo yo. Toca una para ir a su página.', pC: 'Productos activos', live: 'Activo',
+  cal: 'Sparkle Calendar', calD: 'Tu agenda y tu dinero en un solo calendario: registro de entradas y salidas, cobros y chats compartidos, sincronizados entre móvil y PC.',
+  calT1: 'Sincronización móvil · PC', calT2: '7 idiomas', calT3: 'Widget de escritorio',
+  mac: 'Sparkle Macro', macD: 'Un auto-clicker para Windows que encuentra imágenes en la pantalla y hace clic por ti.', macT1: 'Busca y hace clic en imágenes', macT2: 'Ejecución programada',
+  dmx: 'Sparkle DMX', dmxD: 'Control de iluminación DMX desde tu PC: escenas, mapeo de color y shows musicales automáticos, sin internet.', dmxT1: 'Shows musicales automáticos', dmxT2: 'Funciona sin conexión',
+  next: 'Lo próximo', nextD: 'Muy pronto.',
+  sH: 'De un vistazo', s1: 'Productos activos', s1s: 'Calendar · Macro · DMX', s2: 'Dispositivos compatibles', s3: 'Idiomas de Calendar', s3s: 'Coreano, inglés, japonés, chino y más', s4: 'Última versión de Calendar', s4s: 'nov 2026 · Actualización automática en PC',
+  nH: 'Novedades', n1: 'Sparkle Calendar — vista previa de enlaces en el chat', n1d: 'Los enlaces del chat se abren con un toque y muestran una tarjeta de vista previa.', n2: 'El tiempo llega al calendario de PC', n2d: 'Temperatura actual e iconos del tiempo en los días y en el widget de escritorio.', n3: 'Actualización automática en PC', n3d: 'La app de PC descarga las nuevas versiones y las instala al cerrarla.', tCal: 'Calendar',
+  cH: 'Contacto', cD: 'Algo que no funciona, una función que te gustaría o una propuesta de colaboración: escríbeme sin problema.',
+  c1: 'Enviar un correo', c1d: 'Dime qué app y qué dispositivo usas (móvil o PC) y podré ayudarte más rápido.',
+  st1: 'Escríbeme', st1d: 'Problemas o ideas por correo', st2: 'Lo leo y respondo', st2d: 'Con lo que se puede hacer', st3: 'Llega en una actualización', st3d: 'Los cambios aparecen en las notas de actualización de la app',
+  fT: 'Un poco de brillo para cada día.', fP: 'Productos', fD: 'Documentos de Calendar', fG: 'Guía de uso', fPr: 'Política de privacidad', fTe: 'Términos de uso'
+};
+var PT = {
+  nProd: 'Produtos', nNews: 'Novidades', nContact: 'Contato', cta: 'Baixar Sparkle Calendar',
+  chip: 'Um estúdio de apps de uma pessoa só, da Coreia',
+  lead: 'Apps e jogos que trazem<br>um pouco de brilho ao seu dia.',
+  sub: 'Transformo os incômodos do trabalho em ferramentas que você realmente usa, no celular e no PC, da ideia até a manutenção.',
+  b1: 'Ver produtos', b2: 'Contato', f1: '3 apps no ar', f2: 'Android · Windows PC', f3: 'Sparkle Calendar em 7 idiomas',
+  pH: 'Produtos', pD: 'Cada app é planejado, criado e mantido por mim. Toque em um para ver a página dele.', pC: 'Produtos no ar', live: 'No ar',
+  cal: 'Sparkle Calendar', calD: 'Sua agenda e seu dinheiro em um só calendário: registro de ponto, recebimentos e chats compartilhados, sincronizados entre celular e PC.',
+  calT1: 'Sincronização celular · PC', calT2: '7 idiomas', calT3: 'Widget na área de trabalho',
+  mac: 'Sparkle Macro', macD: 'Um auto-clicker para Windows que encontra imagens na tela e clica por você.', macT1: 'Encontra e clica em imagens', macT2: 'Execução agendada',
+  dmx: 'Sparkle DMX', dmxD: 'Controle de iluminação DMX no seu PC: cenas, mapeamento de cores e shows musicais automáticos, sem internet.', dmxT1: 'Shows musicais automáticos', dmxT2: 'Funciona offline',
+  next: 'Vem aí', nextD: 'Em breve.',
+  sH: 'Em resumo', s1: 'Produtos no ar', s1s: 'Calendar · Macro · DMX', s2: 'Dispositivos suportados', s3: 'Idiomas do Calendar', s3s: 'Coreano, inglês, japonês, chinês e mais', s4: 'Versão mais recente do Calendar', s4s: 'nov 2026 · Atualização automática no PC',
+  nH: 'Novidades', n1: 'Sparkle Calendar — prévia de links no chat', n1d: 'Links no chat abrem com um toque e mostram um cartão de prévia.', n2: 'Clima no calendário do PC', n2d: 'Temperatura atual e ícones de clima nos dias e no widget da área de trabalho.', n3: 'Atualização automática no PC', n3d: 'O app de PC baixa as novas versões e instala quando você fecha.', tCal: 'Calendar',
+  cH: 'Contato', cD: 'Algo que não funciona, um recurso que você quer ou uma proposta de parceria: é só mandar.',
+  c1: 'Enviar um e-mail', c1d: 'Diga qual app e qual dispositivo (celular ou PC) você usa, assim consigo ajudar mais rápido.',
+  st1: 'Envie', st1d: 'Problemas ou ideias por e-mail', st2: 'Leio e respondo', st2d: 'Com o que dá para fazer', st3: 'Chega numa atualização', st3d: 'As correções ficam nas notas de atualização do app',
+  fT: 'Um pouco de brilho para cada dia.', fP: 'Produtos', fD: 'Documentos do Calendar', fG: 'Guia de uso', fPr: 'Política de privacidade', fTe: 'Termos de uso'
+};
+var DE = {
+  nProd: 'Produkte', nNews: 'Neuigkeiten', nContact: 'Kontakt', cta: 'Sparkle Calendar holen',
+  chip: 'Ein Ein-Personen-App-Studio aus Korea',
+  lead: 'Apps und Spiele, die deinem Tag<br>ein wenig Glanz verleihen.',
+  sub: 'Ich mache aus alltäglichen Ärgernissen bei der Arbeit Werkzeuge, die du wirklich nutzt – auf Handy und PC, von der Idee bis zum Betrieb.',
+  b1: 'Produkte ansehen', b2: 'Kontakt', f1: '3 Apps online', f2: 'Android · Windows PC', f3: 'Sparkle Calendar in 7 Sprachen',
+  pH: 'Produkte', pD: 'Jede App plane, baue und betreibe ich selbst. Tippe darauf, um zur jeweiligen Website zu gelangen.', pC: 'Aktive Produkte', live: 'Online',
+  cal: 'Sparkle Calendar', calD: 'Termine und Geld in einem Kalender – Arbeitszeiten, Zahlungseingänge und gemeinsame Chats, synchron zwischen Handy und PC.',
+  calT1: 'Handy · PC Sync', calT2: '7 Sprachen', calT3: 'Desktop-Widget',
+  mac: 'Sparkle Macro', macD: 'Ein Auto-Clicker für Windows, der Bilder auf dem Bildschirm findet und für dich klickt.', macT1: 'Bilder finden & klicken', macT2: 'Geplante Ausführung',
+  dmx: 'Sparkle DMX', dmxD: 'DMX-Lichtsteuerung am PC – Szenen, Farb-Mapping und automatische Musikshows, ganz ohne Internet.', dmxT1: 'Automatische Musikshows', dmxT2: 'Funktioniert offline',
+  next: 'Als Nächstes', nextD: 'Kommt bald.',
+  sH: 'Auf einen Blick', s1: 'Aktive Produkte', s1s: 'Calendar · Macro · DMX', s2: 'Unterstützte Geräte', s3: 'Sprachen in Calendar', s3s: 'Koreanisch, Englisch, Japanisch, Chinesisch und mehr', s4: 'Neueste Calendar-Version', s4s: 'Nov. 2026 · PC-Auto-Update',
+  nH: 'Neuigkeiten', n1: 'Sparkle Calendar – Link-Vorschau im Chat', n1d: 'Links im Chat öffnen sich mit einem Tipp und zeigen eine Vorschaukarte.', n2: 'Wetter im PC-Kalender', n2d: 'Aktuelle Temperatur sowie Wetter-Icons in den Tagesfeldern und im Desktop-Widget.', n3: 'Automatische Updates am PC', n3d: 'Die PC-App lädt neue Versionen herunter und installiert sie beim Beenden.', tCal: 'Calendar',
+  cH: 'Kontakt', cD: 'Etwas funktioniert nicht, du wünschst dir eine Funktion oder hast eine Partnerschaftsidee – schreib mir einfach.',
+  c1: 'E-Mail senden', c1d: 'Nenne die App und dein Gerät (Handy oder PC), dann kann ich schneller helfen.',
+  st1: 'Schreib mir', st1d: 'Probleme oder Ideen per E-Mail', st2: 'Ich lese und antworte', st2d: 'Mit dem, was möglich ist', st3: 'Kommt per Update', st3d: 'Änderungen stehen in den Update-Notizen der App',
+  fT: 'Ein wenig Glanz für jeden Tag.', fP: 'Produkte', fD: 'Calendar-Dokumente', fG: 'Anleitung', fPr: 'Datenschutzerklärung', fTe: 'Nutzungsbedingungen'
+};
+var KO = {};
+document.querySelectorAll('[data-t]').forEach(function (e) { var k = e.getAttribute('data-t'); if (KO[k] == null) KO[k] = e.innerHTML; });
+var DICTS = { ko: KO, en: EN, ja: JA, zh: ZH, es: ES, pt: PT, de: DE };
+var lang = skDetect();
+function apply() {
+  var d = DICTS[lang] || EN;
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+  document.title = 'Sparkle Korea';
+  document.querySelectorAll('[data-t]').forEach(function (e) { var k = e.getAttribute('data-t'); if (d[k] != null) e.innerHTML = d[k]; });
+  skLinks(lang);
+}
+skPicker(document.getElementById('lang'), lang, function (l) { lang = l; apply(); });
+apply();
+// 최신 PC 버전: GitHub 공개 배포(sparklekorea/calendar-pc)에서 자동으로 읽어 옴. 못 읽으면 위에 적힌 값 그대로
+fetch('https://api.github.com/repos/sparklekorea/calendar-pc/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+  .then(function (r) { return r.ok ? r.json() : null; })
+  .then(function (j) {
+    if (!j || !j.tag_name) return;
+    var v = String(j.tag_name).replace(/^v/, '');
+    if (!/^\d+(\.\d+)+$/.test(v)) return;
+    document.getElementById('ver').textContent = v;
+    var d = new Date(j.published_at || j.created_at);
+    if (!isNaN(d)) {
+      var mm = d.getMonth() + 1;
+      KO.s4s = d.getFullYear() + '.' + (mm < 10 ? '0' : '') + mm + '.' + (d.getDate() < 10 ? '0' : '') + d.getDate() + ' · PC 자동 업데이트';
+      var SUF = { en: 'PC auto-update', ja: 'PC 自動アップデート', zh: 'PC 自动更新', es: 'Actualización automática en PC', pt: 'Atualização automática no PC', de: 'PC-Auto-Update' };
+      Object.keys(SUF).forEach(function (l) {
+        var ds;
+        try { ds = new Intl.DateTimeFormat(l === 'zh' ? 'zh-CN' : l, { year: 'numeric', month: 'short', day: 'numeric' }).format(d); }
+        catch (e) { ds = d.getFullYear() + '-' + mm + '-' + d.getDate(); }
+        DICTS[l].s4s = ds + ' · ' + SUF[l];
+      });
+      apply();
+    }
+  })
+  .catch(function () {});
+</script>
+</body>
+</html>
